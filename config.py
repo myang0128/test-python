@@ -21,7 +21,7 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     ENV = "production"
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'mysql://root:passw0rd@localhost:3306/test'
+    SQLALCHEMY_DATABASE_URI = 'mysql://test:passw0rd@10.131.0.177:3306/test'
     SQLALCHEMY_ECHO = True
     JWT_SECRET_KEY = "secret-key"
 
