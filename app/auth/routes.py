@@ -9,6 +9,11 @@ from flask_jwt_extended import (
 )
 from ..models import User
 
+
+@auth_api_blueprint.route('/', methods=['GET'])
+def index():
+    return 'heehee'
+
 @auth_api_blueprint.route('/login', methods=['POST'])
 def login():
     request_json = request.json
